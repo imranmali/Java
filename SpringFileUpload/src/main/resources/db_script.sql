@@ -1,0 +1,16 @@
+CREATE SCHEMA `test_db` ;
+
+
+CREATE TABLE `test_db`.`storage` (
+  `id` INT NOT NULL AUTO_INCREMENT,
+  `filename` VARCHAR(255) NULL,
+  `extension` VARCHAR(50) NULL DEFAULT NULL,
+  `filesize` DECIMAL(18,0) NULL DEFAULT NULL,
+  `mimetype` VARCHAR(100) NULL DEFAULT NULL,
+  `lobtype` VARCHAR(1) NULL DEFAULT NULL,
+  `binarylob` LONGBLOB NULL DEFAULT NULL,
+  `characterlob` LONGTEXT NULL DEFAULT NULL,
+  PRIMARY KEY (`id`));
+
+  
+
