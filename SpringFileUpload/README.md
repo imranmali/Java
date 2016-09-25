@@ -28,23 +28,3 @@ $ java -jar jetty/jetty-runner-9.2.6.v20141205.jar --port 8090 --log jetty.log t
 
 Go to http://localhost:8090/SpringFileUpload and test it.
 
-
-#Steps to set up development environment in Eclipse
-
-##After you clone this project from github, run
-```
-$ mvn package
-$ mvn eclipse:eclipse
-```
-Open Eclipse to import the project
-Click top File -> Import -> Maven -> Existing Maven Projects (Choose the folder that you just downloded)
-Right click your project, click Properties -> Java Build Path, remove all M2_REPO/***/*** jars (names started with M2_REPO), click OK.
-Check if Maven dependencies are setup correctly. Right click your project, click Properties -> Java Build Path-> Libraries, and the Maven Dependencies include all your dependent jar files
-Right click pom.xml, click Run as-> Maven clean, then Run as-> Maven Install
-Right click your project, click Run as -> Run on server (Supposed you already set up your local Tomcat server)
-
-
-Development environment
-
-Windows 10 64bit, STS 3.6.2.RELEASE
-
