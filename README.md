@@ -15,14 +15,15 @@ Build and run the app in command line environment
 Copy the text in src/main/resources/db_script.sql and run it to create a table in MySQL (in phpmyadmin or MySQLworkbench or mysql command line environment)
 
 ###2.Build package
-
+```
 $ mvn package
-
+```
 ###3.Run jetty-runner
+```
 $ ./run.sh
 or
 $ java -jar jetty/jetty-runner-9.2.6.v20141205.jar --port 8090 --log jetty.log target/SpringFileUpload.war
-
+```
 ###Test it
 
 Go to http://localhost:8090/SpringFileUpload and test it.
